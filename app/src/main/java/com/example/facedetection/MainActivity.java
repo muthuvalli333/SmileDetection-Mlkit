@@ -92,11 +92,11 @@ public class MainActivity extends AppCompatActivity {
 
                 } else {
                     Bundle bundle = new Bundle();
-                    bundle.putString(LCOFaceDetection.RESULT_TEXT,resultText);
+                    bundle.putString(FaceDetection.RESULT_TEXT,resultText);
                     DialogFragment resultDialog = new ResultDialog();
                     resultDialog.setArguments(bundle);
                     resultDialog.setCancelable(false);
-                    resultDialog.show(getSupportFragmentManager(), LCOFaceDetection.RESULT_DIALOG);
+                    resultDialog.show(getSupportFragmentManager(), FaceDetection.RESULT_DIALOG);
                 }
             }
         });

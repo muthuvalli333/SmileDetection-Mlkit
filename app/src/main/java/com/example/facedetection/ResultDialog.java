@@ -27,7 +27,7 @@ public class ResultDialog extends DialogFragment {
 
 
        Bundle bundle=getArguments();
-       resultText=bundle.getString(LCOFaceDetection.RESULT_TEXT);
+       resultText=bundle.getString(FaceDetection.RESULT_TEXT);
 
 
        resultTV.setText(resultText);
